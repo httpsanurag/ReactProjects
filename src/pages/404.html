@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const segment = 1;
+      const pathSegments = window.location.pathname.split('/').slice(1);
+      const redirectPath = pathSegments.slice(0, segment).join('/');
+      window.location.href = '/' + redirectPath + '/index.html';
+    </script>
+  </head>
+  <body></body>
+</html>
